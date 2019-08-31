@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import 'normalize.css/normalize.css'
 
-import Header from './header'
+import Header from './Header'
 import './layout.css'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, noHeader = false, headerTheme = {} }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -19,7 +19,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {!noHeader && (
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          headerTheme={headerTheme}
+        />
+      )}
       <div
         style={{
           margin: `0 auto`,
