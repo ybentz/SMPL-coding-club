@@ -1,4 +1,5 @@
 html {
+  font-size: 16px;
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -45,6 +46,7 @@ template {
 
 a {
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 
 a:active,

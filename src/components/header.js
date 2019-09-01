@@ -5,62 +5,52 @@ import styled from 'styled-components'
 
 import LogoImage from './LogoImage'
 
-const Header = ({ headerTheme }) => {
+const Header = ({ className }) => {
   return (
-    <HeaderStyled headerTheme={headerTheme}>
-      <HeaderContent>
-        <Link to="/">
-          <LogoImage style={{ width: '75px' }} headerTheme={headerTheme} />
-        </Link>
-        <HeaderLinks>
-          <HeaderLink to="/resources">Resources</HeaderLink>
-          <HeaderLink to="/about">About</HeaderLink>
-        </HeaderLinks>
-      </HeaderContent>
+    <HeaderStyled className={className}>
+      <Link to="/">
+        <LogoImage imgStyles={{ width: '4.5rem' }} />
+      </Link>
+      <HeaderLinks>
+        <HeaderLink to="/resources">Resources</HeaderLink>
+        <HeaderLink to="/about">About</HeaderLink>
+      </HeaderLinks>
     </HeaderStyled>
   )
 }
 
-const HeaderContent = styled.div`
+const HeaderStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.45rem 0;
 `
 
 const HeaderLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 600;
 `
 
 const HeaderLink = styled(Link)`
-  margin-left: 30px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
-  color: #ffffff;
-  text-decoration: none;
+  margin-left: 1.875rem;
   transition: color 0.15s;
+  color: #ffffff;
   &:hover {
     color: #d2d2d2;
   }
 `
 
-const HeaderStyled = styled.header`
-  background-color: ${({ headerTheme }) =>
-    headerTheme.isTransparent ? 'rgba(255, 255, 255, 0)' : '#FFF'};
-  margin-bottom: 1.45rem;
-`
-
 Header.propTypes = {
-  headerTheme: PropTypes.object,
+  className: PropTypes.object,
 }
 
 Header.defaultProps = {
-  headerTheme: {},
+  className: {},
 }
 
 export default Header

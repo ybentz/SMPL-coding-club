@@ -2,19 +2,10 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const LogoImage = ({ style, headerTheme }) => {
+const LogoImage = ({ imgStyles }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "SMPL-logo-text.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      placeholderImageWhite: file(
-        relativePath: { eq: "SMPL-logo-text-white.png" }
-      ) {
+      placeholderImage: file(relativePath: { eq: "SMPL-logo-text-white.png" }) {
         childImageSharp {
           fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid_withWebp
@@ -24,16 +15,11 @@ const LogoImage = ({ style, headerTheme }) => {
     }
   `)
 
-  let image
-  if (headerTheme.isLight) {
-    image = data.placeholderImageWhite
-  } else {
-    image = data.placeholderImage
-  }
+  const image = data.placeholderImage
   return (
     <Img
       fluid={image.childImageSharp.fluid}
-      style={style}
+      style={imgStyles}
       alt="SMPL Coding Club Logo"
     />
   )

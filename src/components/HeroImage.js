@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 const BackgroundImageStyled = styled(BackgroundImage)`
-  height: 500px;
+  height: 400px;
 `
 
-const HeroImage = ({ children }) => {
+const HeroImage = ({ children, className }) => {
   const data = useStaticQuery(graphql`
     query {
       desktop: file(relativePath: { eq: "hero-image.jpg" }) {
@@ -31,6 +31,7 @@ const HeroImage = ({ children }) => {
       Tag="section"
       fluid={backgroundFluidImageStack}
       backgroundColor={`#040e18`}
+      className={className}
       style={{
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
