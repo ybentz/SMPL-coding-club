@@ -1,38 +1,29 @@
-import { useStaticQuery, graphql } from 'gatsby'
 import 'normalize.css/normalize.css'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import Header from './Header'
+import HeroHeader from '../components/HeroHeader'
+import { HeroTitle } from '../styles/HeroHeader'
 import './layout.css'
 
-const Layout = ({ children, noHeader = false }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      {!noHeader && <Header siteTitle={data.site.siteMetadata.title} />}
-      <SiteContent>
-        <main>{children}</main>
-      </SiteContent>
-      <Footer>
-        <FooterContent>
-          This Site is built and maintained by Yonatan bentzur and is not an
-          official SMPL website.
-        </FooterContent>
-      </Footer>
-    </>
-  )
-}
+const Layout = ({ children, headerTitle, headerSubTitle }) => (
+  <>
+    <HeroHeader>
+      <HeroTitle>{headerTitle}</HeroTitle>
+      {headerSubTitle && <h3>{headerSubTitle}</h3>}
+    </HeroHeader>
+    <SiteContent>
+      <main>{children}</main>
+    </SiteContent>
+    <Footer>
+      <FooterContent>
+        This Site is built and maintained by Yonatan bentzur and is not an
+        official SMPL website.
+      </FooterContent>
+    </Footer>
+  </>
+)
 
 const contentWidth = '1280px'
 const contentPaddingHorizontal = '3rem'
