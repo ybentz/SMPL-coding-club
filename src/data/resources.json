@@ -1,0 +1,29 @@
+[
+  {
+    "id": "scratch",
+    "name": "Scratch",
+    "description": "Easy to learn Drag-and-drop blocks programming for kids and others new to coding.",
+    "officialDescription": "Scratch helps young people learn to think creatively, reason systematically, and work collaboratively — essential skills for life in the 21st century.",
+    "slug": "scratch",
+    "url": "https://scratch.mit.edu/",
+    "imageUrl": "../images/resources/scratch.png"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "description": "General purpose programming language, popular in college-level intro programming courses. Easy to pick up yet very powerful.",
+    "officialDescription": "Whether you're new to programming or an experienced developer, it's easy to learn and use Python.",
+    "slug": "python",
+    "url": "https://www.python.org/",
+    "imageUrl": "../images/resources/python.png"
+  },
+  {
+    "id": "javascript",
+    "name": "Javascript",
+    "description": "General purpose programming language, the language of the web - used to create websites",
+    "officialDescription": "While it is most well-known as the scripting language for Web pages, Javascript is used for many other purposes.",
+    "slug": "javascript",
+    "url": "https://en.wikipedia.org/wiki/JavaScript",
+    "imageUrl": "../images/resources/js.png"
+  }
+]
