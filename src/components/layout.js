@@ -4,14 +4,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import HeroHeader from '../components/HeroHeader'
-import { HeroTitle } from '../styles/HeroHeader'
+import { HeroTitle, HeroSubTitle } from '../styles/HeroHeader'
 import './layout.css'
 
 const Layout = ({ children, headerTitle, headerSubTitle }) => (
   <>
     <HeroHeader>
       <HeroTitle>{headerTitle}</HeroTitle>
-      {headerSubTitle && <h3>{headerSubTitle}</h3>}
+      {headerSubTitle && <HeroSubTitle>{headerSubTitle}</HeroSubTitle>}
     </HeroHeader>
     <SiteContent>
       <main>{children}</main>
