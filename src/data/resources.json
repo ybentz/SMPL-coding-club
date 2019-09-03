@@ -1,12 +1,78 @@
 [
   {
+    "id": "generic",
+    "name": "Generic Resources",
+    "description": "Resources that are not specific to a programming language, e.g. logic-thinking games, sites with resources for many languages, etc..",
+    "slug": "generic",
+    "imageUrl": "../images/resources/generic.jpg",
+    "links": [
+      {
+        "name": "Code.org",
+        "description": "A sampler of coding tutorials in a variety of languages.",
+        "url": "https://code.org/"
+      },
+      {
+        "name": "LightBot (free version)",
+        "description": "A simple game designed to teach logical thinking. Great for both adults and children. (free version)",
+        "url": "http://lightbot.com/flash.html"
+      },
+      {
+        "name": "LightBot (paid iOS and Android app)",
+        "description": "A simple game designed to teach logical thinking. Great for both adults and children.",
+        "url": "https://lightbot.com/index.html"
+      },
+      {
+        "name": "Grasshopper",
+        "description": "A free mobile app (for iOS and Android) that teaches coding for beginners.",
+        "url": "https://grasshopper.codes/"
+      },
+      {
+        "name": "CargoBot",
+        "description": "A free iOS app that teaches coding for beginners.",
+        "url": "https://twolivesleft.com/CargoBot/"
+      }
+    ]
+  },
+  {
     "id": "scratch",
     "name": "Scratch",
     "description": "Easy to learn Drag-and-drop blocks programming for kids and others new to coding.",
     "officialDescription": "Scratch helps young people learn to think creatively, reason systematically, and work collaboratively — essential skills for life in the 21st century.",
     "slug": "scratch",
     "url": "https://scratch.mit.edu/",
-    "imageUrl": "../images/resources/scratch.png"
+    "imageUrl": "../images/resources/scratch.png",
+    "links": [
+      {
+        "name": "Getting Started Video",
+        "description": "",
+        "url": "https://vimeo.com/80961102"
+      },
+      {
+        "name": "Getting Started Guide",
+        "description": "Step by step tutorial.",
+        "url": "http://cdn.scratch.mit.edu/scratchr2/static/__4a1252c11ee6cc14d98eb660ddc831c9__//pdfs/help/Getting-Started-Guide-Scratch2.pdf"
+      },
+      {
+        "name": "Starter projects",
+        "description": "Edit existing projects created by the Scratch team.",
+        "url": "http://scratch.mit.edu/starter_projects/"
+      },
+      {
+        "name": "Scratch cards",
+        "description": "Short activities (simple tutorials with videos to follow along).",
+        "url": "http://scratch.mit.edu/help/cards/"
+      },
+      {
+        "name": "Google CS First",
+        "description": "8-lesson online curriculum (“Art” theme recommended, other themes also available).",
+        "url": "https://csfirst.withgoogle.com/c/cs-first/en/art/overview.html"
+      },
+      {
+        "name": "Scratch Jr.",
+        "description": "A free mobile app (for iOS and Android) that teaches coding for children (5-7).",
+        "url": "https://www.scratchjr.org/"
+      }
+    ]
   },
   {
     "id": "python",
@@ -15,7 +81,39 @@
     "officialDescription": "Whether you're new to programming or an experienced developer, it's easy to learn and use Python.",
     "slug": "python",
     "url": "https://www.python.org/",
-    "imageUrl": "../images/resources/python.png"
+    "imageUrl": "../images/resources/python.png",
+    "links": [
+      {
+        "name": "Codecademy",
+        "description": "Step-by-step basics tutorial, learn by following instructions and writing real code.",
+        "url": "https://www.codecademy.com/learn/python"
+      },
+      {
+        "name": "CodeCombat",
+        "description": "Learn coding by playing a simple game.",
+        "url": "https://codecombat.com/play"
+      },
+      {
+        "name": "EarSketch",
+        "description": "Learn to code by making music.",
+        "url": "https://earsketch.gatech.edu/landing/"
+      },
+      {
+        "name": "Trinket",
+        "description": "A visual introduction to code using the Python programming language.",
+        "url": "https://hourofpython.com/"
+      },
+      {
+        "name": "How to Think Like a Computer Scientist: Interactive Edition",
+        "description": "A more theoretical approach to learning computer science using the Python language and interactive examples.",
+        "url": "http://interactivepython.org/runestone/static/thinkcspy/index.html"
+      },
+      {
+        "name": "Learn Python the Hard Way",
+        "description": "A textbook approach to learning Python with lots of examples (costs money, but has a free sample with 8 exercises).",
+        "url": "https://learnpythonthehardway.org/book/"
+      }
+    ]
   },
   {
     "id": "javascript",
@@ -24,6 +122,112 @@
     "officialDescription": "While it is most well-known as the scripting language for Web pages, Javascript is used for many other purposes.",
     "slug": "javascript",
     "url": "https://en.wikipedia.org/wiki/JavaScript",
-    "imageUrl": "../images/resources/js.png"
+    "imageUrl": "../images/resources/js.png",
+    "links": [
+      {
+        "name": "FreeCodeCamp",
+        "description": "100s of hours of web development tutorials for all levels, 100% free.",
+        "url": "https://www.freecodecamp.org/"
+      },
+      {
+        "name": "Codecademy",
+        "description": "Step-by-step basics tutorial, learn by following instructions and writing real code.",
+        "url": "https://www.codecademy.com/learn/introduction-to-javascript"
+      },
+      {
+        "name": "CodeCombat",
+        "description": "Learn coding by playing a simple game.",
+        "url": "https://codecombat.com/play"
+      },
+      {
+        "name": "Khan Academy",
+        "description": "Step-by-step tutorial with videos.",
+        "url": "https://www.khanacademy.org/computing/computer-programming/programming"
+      },
+      {
+        "name": "EarSketch",
+        "description": "Learn to code by making music.",
+        "url": "https://earsketch.gatech.edu/landing/"
+      },
+      {
+        "name": "CodeGuppy",
+        "description": "Beginner tutorials to learn by doing.",
+        "url": "https://codeguppy.com"
+      },
+      {
+        "name": "JavaScript30",
+        "description": "30 stand alone video tutorials for beginners, learn by writing real code.",
+        "url": "https://www.javascript30.com"
+      },
+      {
+        "name": "App Lab by code.org",
+        "description": "A programming environment where you can make simple apps with Javascript using blocks or text.",
+        "url": "https://code.org/educate/applab"
+      },
+      {
+        "name": "Learn to code with Karel the dog",
+        "description": "2D problem solving exercises.",
+        "url": "http://hoc.codehs.com"
+      }
+    ]
+  },
+  {
+    "id": "html-css",
+    "name": "HTML & CSS",
+    "description": "HTML & CSS are the most basic building blocks of any website. HTML defines the structure, CSS defines the visual styles.",
+    "slug": "html-css",
+    "imageUrl": "../images/resources/html-css.png",
+    "links": [
+      {
+        "name": "FreeCodeCamp",
+        "description": "100s of hours of web development tutorials for all levels, 100% free.",
+        "url": "https://www.freecodecamp.org/"
+      },
+      {
+        "name": "Codecademy",
+        "description": "Step-by-step basics tutorial, learn by following instructions and writing real code.",
+        "url": "https://www.codecademy.com/catalog/language/html-css"
+      },
+      {
+        "name": "Khan Academy",
+        "description": "Step-by-step tutorial with videos.",
+        "url": "https://www.khanacademy.org/computing/computer-programming/html-css"
+      }
+    ]
+  },
+  {
+    "id": "processing",
+    "name": "Processing",
+    "description": "Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.",
+    "slug": "processing",
+    "url": "https://processing.org",
+    "imageUrl": "../images/resources/processing.jpg",
+    "links": [
+      {
+        "name": "Sketchpad",
+        "description": "Online Processing development environment.",
+        "url": "http://sketchpad.cc/"
+      },
+      {
+        "name": "Creative Coding Video Tutorials by Daniel Shiffman",
+        "description": "YouTube tutorials.",
+        "url": "https://www.youtube.com/user/shiffman/playlists?view=50&sort=dd&shelf_id=2"
+      }
+    ]
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "description": "General purpose programming language, used mostly for servers applications and Android apps.",
+    "slug": "java",
+    "url": "https://go.java/index.html",
+    "imageUrl": "../images/resources/java.png",
+    "links": [
+      {
+        "name": "Codecademy",
+        "description": "Step-by-step basics tutorial, learn by following instructions and writing real code.",
+        "url": "https://www.codecademy.com/learn/learn-java"
+      }
+    ]
   }
 ]
