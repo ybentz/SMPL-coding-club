@@ -23,20 +23,34 @@ const Layout = ({ children, noHeader = false }) => {
       {!noHeader && <Header siteTitle={data.site.siteMetadata.title} />}
       <SiteContent>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </SiteContent>
+      <Footer>
+        <FooterContent>
+          This Site is built and maintained by Yonatan bentzur and is not an
+          official SMPL website.
+        </FooterContent>
+      </Footer>
     </>
   )
 }
 
+const contentWidth = '1280px'
+const contentPaddingHorizontal = '3rem'
+const contentPaddingVertical = '1.45rem'
+
 const SiteContent = styled.div`
   margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 3rem 1.45rem;
+  max-width: ${contentWidth};
+  padding: 0 ${contentPaddingHorizontal} ${contentPaddingVertical};
+`
+
+const Footer = styled.footer`
+  background: #0a0e1a;
+  color: #d4d4d4;
+`
+
+const FooterContent = styled(SiteContent)`
+  padding-top: ${contentPaddingVertical};
 `
 
 Layout.propTypes = {
