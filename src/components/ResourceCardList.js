@@ -31,7 +31,7 @@ const ResourceCardList = ({ filter }) => {
   return (
     <CardList>
       {filteredResources.map(resource => {
-        return <ResourceCard resource={resource} />
+        return <ResourceCard resource={resource} key={resource.id} />
       })}
     </CardList>
   )

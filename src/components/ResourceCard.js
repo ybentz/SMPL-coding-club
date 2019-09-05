@@ -11,7 +11,7 @@ import {
 } from '../styles/Card'
 
 const ResourceCard = ({ resource }) => (
-  <Link to={`/resources/${resource.slug}`}>
+  <LinkStyled to={`/resources/${resource.slug}`}>
     <CardWithImageStyled>
       <CardImageStyled fluid={resource.imageUrl.childImageSharp.fluid} />
       <CardWithImageContent>
@@ -19,8 +19,12 @@ const ResourceCard = ({ resource }) => (
         <CardDescription>{resource.description}</CardDescription>
       </CardWithImageContent>
     </CardWithImageStyled>
-  </Link>
+  </LinkStyled>
 )
+
+const LinkStyled = styled(Link)`
+  display: flex;
+`
 
 const CardWithImageStyled = styled(CardWithImage)`
   transition: transform 0.3s;
@@ -31,7 +35,7 @@ const CardWithImageStyled = styled(CardWithImage)`
 
 const CardImageStyled = styled(CardImage)`
   height: 250px;
-  box-shadow: 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.05);
 `
 
 export default ResourceCard

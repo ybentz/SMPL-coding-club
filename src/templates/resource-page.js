@@ -25,7 +25,7 @@ const ResourcePage = ({ data }) => {
           {links &&
             links.map(({ name, description, url }) => {
               return (
-                <LinkCardStyled>
+                <LinkCardStyled key={url}>
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     <h4>{name}</h4>
                     <p>{description}</p>

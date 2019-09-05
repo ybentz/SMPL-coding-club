@@ -18,7 +18,7 @@ const Layout = ({ children, headerTitle, headerSubTitle }) => (
     </SiteContent>
     <Footer>
       <FooterContent>
-        This Site is built and maintained by Yonatan bentzur and is not an
+        This site is built and maintained by Yonatan Bentzur and is not an
         official SMPL website.
       </FooterContent>
     </Footer>

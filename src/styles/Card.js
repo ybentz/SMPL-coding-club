@@ -7,7 +7,7 @@ const cardBorderRadius = '0.5625rem'
 export const Card = styled.div`
   padding: ${cardPadding};
   border-radius: ${cardBorderRadius};
-  box-shadow: 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.15);
   color: #4d4d4d;
 `
 

@@ -46,11 +46,11 @@ const HeaderLink = styled(Link)`
 `
 
 Header.propTypes = {
-  className: PropTypes.object,
+  className: PropTypes.string,
 }
 
 Header.defaultProps = {
-  className: {},
+  className: '',
 }
 
 export default Header

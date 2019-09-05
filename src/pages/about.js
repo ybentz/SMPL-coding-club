@@ -49,7 +49,7 @@ const AboutPage = () => {
       <PageSection>
         <h2>Meet the instructors:</h2>
         {people.nodes.map(person => {
-          return <Person person={person} />
+          return <Person person={person} key={person.name} />
         })}
       </PageSection>
     </Layout>
