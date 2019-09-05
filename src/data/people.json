@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Yonatan Bentzur",
+    "imageUrl": "../images/people/Yonatan.jpg",
+    "description": "Yonatan is originally from Israel and moved to the Bay Area about 4 years ago. After completing his BSc in Computer Sceince from one of the leading universities in Israel he started working at Wix.com, the Israeli website builder, as a frontend (web) engineer. After moving to the US he started working at a small startup called Lustre.ai (formerly Slant.co) and he's been there for the past 3.5 years."
+  },
+  {
+    "name": "Lauren Wong",
+    "imageUrl": "../images/people/default.jpg",
+    "description": ""
+  }
+]
