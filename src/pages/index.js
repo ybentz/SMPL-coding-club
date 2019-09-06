@@ -1,10 +1,11 @@
-import { Link } from 'gatsby'
 import React from 'react'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ResourceCardList from '../components/ResourceCardList'
 import { PageSection, PageTextSection } from '../styles/Page'
+import { LinkButton } from '../styles/Link'
 
 const IndexPage = () => (
   <Layout
@@ -23,12 +24,9 @@ const IndexPage = () => (
     <PageSection>
       <ResourceCardList filter={popularResourceFilter} />
     </PageSection>
-    <PageTextSection>
-      <p>
-        To browse the list of all available programming languages and resources
-        click <Link to="/resources">here</Link>.
-      </p>
-    </PageTextSection>
+    <PageSectionCentered>
+      <LinkButton to="/resources">See all resources</LinkButton>
+    </PageSectionCentered>
   </Layout>
 )
 
@@ -36,5 +34,10 @@ const popularResources = ['scratch', 'python', 'javascript']
 const popularResourceFilter = resource => {
   return popularResources.includes(resource.id)
 }
+
+const PageSectionCentered = styled(PageSection)`
+  display: flex;
+  justify-content: center;
+`
 
 export default IndexPage
