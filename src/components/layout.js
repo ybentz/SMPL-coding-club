@@ -18,8 +18,9 @@ const Layout = ({ children, headerTitle, headerSubTitle }) => (
     </SiteContent>
     <Footer>
       <FooterContent>
-        This site is built and maintained by Yonatan Bentzur and is not an
-        official SMPL website.
+        This website is built and maintained by Yonatan Bentzur and is not an
+        official website for the City of San Mateo or the San Mateo Public
+        Library.
       </FooterContent>
     </Footer>
   </>

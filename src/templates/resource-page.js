@@ -25,11 +25,15 @@ const ResourcePage = ({ data }) => {
           {links &&
             links.map(({ name, description, url }) => {
               return (
-                <LinkCardStyled key={url}>
-                  <a href={url} target="_blank" rel="noopener noreferrer">
-                    <h4>{name}</h4>
-                    <p>{description}</p>
-                  </a>
+                <LinkCardStyled
+                  as="a"
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={url}
+                >
+                  <h4>{name}</h4>
+                  <p>{description}</p>
                 </LinkCardStyled>
               )
             })}
@@ -76,6 +80,7 @@ const PageSectionStyled = styled(PageSection)`
 `
 
 const LinkCardStyled = styled(Card)`
+  display: block;
   margin-bottom: 1.125rem;
   transition: transform 0.3s;
   &:hover {
