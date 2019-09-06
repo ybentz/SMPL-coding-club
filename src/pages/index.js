@@ -25,7 +25,7 @@ const IndexPage = () => (
       <ResourceCardList filter={popularResourceFilter} />
     </PageSection>
     <PageSectionCentered>
-      <LinkButton to="/resources">See all resources</LinkButton>
+      <LinkButton to="/resources">See all</LinkButton>
     </PageSectionCentered>
   </Layout>
 )

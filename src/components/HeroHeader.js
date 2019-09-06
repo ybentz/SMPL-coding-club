@@ -25,7 +25,7 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1280px;
+  max-width: ${({ theme }) => theme.maxContentWidth};
   padding: 0 3rem;
 `
 
@@ -40,7 +40,7 @@ const HeroHeaderContent = styled.div`
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  color: #d4d4d4;
+  color: ${({ theme }) => theme.colorPrimary};
 `
 
 export default HeroHeader

@@ -8,7 +8,6 @@ export const Card = styled.div`
   padding: ${cardPadding};
   border-radius: ${cardBorderRadius};
   box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.15);
-  color: #4d4d4d;
 `
 
 export const CardWithImage = styled(Card)`

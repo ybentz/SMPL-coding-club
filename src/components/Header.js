@@ -38,10 +38,10 @@ const HeaderLinks = styled.div`
 
 const HeaderLink = styled(Link)`
   margin-left: 1.875rem;
-  transition: color 0.15s;
-  color: #ffffff;
+  color: ${({ theme }) => theme.colorPrimary};
+  transition: color ${({ theme }) => theme.linkTransition};
   &:hover {
-    color: #d2d2d2;
+    color: ${({ theme }) => theme.colorPrimaryHover};
   }
 `
 

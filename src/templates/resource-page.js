@@ -39,10 +39,7 @@ const ResourcePage = ({ data }) => {
             })}
         </div>
       </PageSectionStyled>
-      <SEO
-        title={`Resource Page - ${name}`}
-        image={imageUrl.childImageSharp.fluid.src}
-      />
+      <SEO title={`${name}`} image={imageUrl.childImageSharp.fluid.src} />
     </Layout>
   )
 }
@@ -59,7 +56,7 @@ export const resourcePageQuery = graphql`
       }
       imageUrl {
         childImageSharp {
-          fluid(maxHeight: 400) {
+          fluid(maxHeight: 300) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
@@ -82,12 +79,10 @@ const PageSectionStyled = styled(PageSection)`
 const LinkCardStyled = styled(Card)`
   display: block;
   margin-bottom: 1.125rem;
-  transition: transform 0.3s;
+  transition: transform 0.3s, color ${({ theme }) => theme.linkTransition};
   &:hover {
     transform: scale(1.05);
-  }
-  &:hover a {
-    color: #000000;
+    color: ${({ theme }) => theme.colorSecondaryHover};
   }
   &:last-child {
     margin-bottom: 0;

@@ -1,7 +1,9 @@
-import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
+import React from 'react'
+import styled from 'styled-components'
+
+import theme from '../styles/theme'
 
 const BackgroundImageStyled = styled(BackgroundImage)`
   height: 400px;
@@ -21,7 +23,7 @@ const HeroImage = ({ children, className }) => {
   `)
 
   const imageData = data.desktop.childImageSharp.fluid
-  const overlayColor = `rgba(4,14,24, 0.7)`
+  const overlayColor = `rgba(4, 14, 24, 0.7)`
   const backgroundFluidImageStack = [
     `linear-gradient(${overlayColor}, ${overlayColor})`,
     imageData,
@@ -30,7 +32,7 @@ const HeroImage = ({ children, className }) => {
     <BackgroundImageStyled
       Tag="section"
       fluid={backgroundFluidImageStack}
-      backgroundColor={`#040e18`}
+      backgroundColor={theme.backgroundPrimary}
       className={className}
       style={{
         backgroundSize: 'cover',

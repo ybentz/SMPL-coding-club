@@ -31,7 +31,7 @@ const ImgStyled = styled(Img)`
   margin-right: 1.5rem;
   flex-shrink: 0;
   border-radius: 50%;
-  border: 1px solid #d4d4d4;
+  border: 1px solid ${({ theme }) => theme.colorPrimary};
   box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.25);
 `
 
