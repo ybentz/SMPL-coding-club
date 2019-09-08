@@ -7,6 +7,9 @@ import HeroHeader from '../components/HeroHeader'
 import { HeroTitle, HeroSubTitle } from '../styles/HeroHeader'
 import theme from '../styles/theme'
 import './layout.css'
+// Load self-hosted fonts
+import 'typeface-merriweather'
+import 'typeface-lato'
 
 const Layout = ({ children, headerTitle, headerSubTitle }) => (
   <ThemeProvider theme={theme}>
