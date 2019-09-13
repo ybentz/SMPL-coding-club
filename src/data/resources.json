@@ -229,5 +229,45 @@
         "url": "https://www.codecademy.com/learn/learn-java"
       }
     ]
+  },
+  {
+    "id": "swift",
+    "name": "Swift",
+    "description": "Swift is a programming language developed by Apple and is the main language for building iOS apps.",
+    "slug": "swift",
+    "url": "https://developer.apple.com/swift/",
+    "imageUrl": "../images/resources/swift.png",
+    "links": [
+      {
+        "name": "Swift for Beginners - Udacity",
+        "description": "Free beginner course (approx. 7 days) that teaches Swift from the beginning.",
+        "url": "https://www.udacity.com/course/swift-for-beginners--ud1022"
+      },
+      {
+        "name": "Swift Playgrounds",
+        "description": "An official and free iOS app made by Apple that teaches Swift and coding in general in a fun way. (link to the App Store)",
+        "url": "https://apps.apple.com/us/app/swift-playgrounds/id908519492"
+      }
+    ]
+  },
+  {
+    "id": "advanced",
+    "name": "Advanced Programming",
+    "description": "Variuos resources and ideas to expand and improve the coding skills of experienced coders.",
+    "slug": "advanced-programming",
+    "url": "",
+    "imageUrl": "../images/resources/advanced.jpg",
+    "links": [
+      {
+        "name": "Project Euler",
+        "description": "Programming challenges in a variety of languages and difficulties.",
+        "url": "https://www.hackerrank.com/contests/projecteuler/challenges"
+      },
+      {
+        "name": "CodingBat",
+        "description": "Programming challenges in Python or Java.",
+        "url": "http://codingbat.com"
+      }
+    ]
   }
 ]

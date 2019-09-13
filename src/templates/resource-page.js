@@ -21,7 +21,7 @@ const ResourcePage = ({ data }) => {
             }}
           />
         </ImageContainer>
-        <div>
+        <LinkCardList>
           {links &&
             links.map(({ name, description, url }) => {
               return (
@@ -37,7 +37,7 @@ const ResourcePage = ({ data }) => {
                 </LinkCardStyled>
               )
             })}
-        </div>
+        </LinkCardList>
       </PageSectionStyled>
       <SEO title={`${name}`} image={imageUrl.childImageSharp.fluid.src} />
     </Layout>
@@ -76,9 +76,15 @@ const PageSectionStyled = styled(PageSection)`
   display: flex;
 `
 
+const LinkCardList = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+`
+
 const LinkCardStyled = styled(Card)`
-  display: block;
-  margin-bottom: 1.125rem;
+  display: inline-block;
+  text-align: center;
   transition: transform 0.3s, color ${({ theme }) => theme.linkTransition};
   &:hover {
     transform: scale(1.05);
