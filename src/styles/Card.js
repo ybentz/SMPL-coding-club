@@ -2,7 +2,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 const cardPadding = '0.75rem'
-const cardBorderRadius = '0.5625rem'
+export const cardBorderRadius = '0.5625rem'
 
 export const Card = styled.div`
   padding: ${cardPadding};

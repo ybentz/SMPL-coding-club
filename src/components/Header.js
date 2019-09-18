@@ -31,9 +31,12 @@ const HeaderLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
+  @media ${({ theme }) => theme.device.mobileL} {
+    font-size: 1.125rem;
+  }
 `
 
 const HeaderLink = styled(Link)`

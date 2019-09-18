@@ -39,12 +39,18 @@ const ResourceCardList = ({ filter }) => {
 
 const CardList = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
   justify-content: center;
   max-width: 1024px;
-  padding: 0 1.5rem;
   margin: 0 auto;
+  @media ${({ theme }) => theme.device.tablet} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media ${({ theme }) => theme.device.laptop} {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 1.5rem;
+  }
 `
 
 export default ResourceCardList

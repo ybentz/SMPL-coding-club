@@ -26,7 +26,13 @@ const Content = styled.div`
   align-items: center;
   width: 100%;
   max-width: ${({ theme }) => theme.maxContentWidth};
-  padding: 0 3rem;
+  padding: 0 1rem;
+  @media ${({ theme }) => theme.device.mobileL} {
+    padding: 0 2rem;
+  }
+  @media ${({ theme }) => theme.device.tablet} {
+    padding: 0 3rem;
+  }
 `
 
 const HeaderStyled = styled(Header)`
@@ -39,6 +45,7 @@ const HeroHeaderContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-grow: 1;
   color: ${({ theme }) => theme.colorPrimary};
 `

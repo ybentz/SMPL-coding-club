@@ -27,6 +27,7 @@ const LinkStyled = styled(Link)`
 `
 
 const CardWithImageStyled = styled(CardWithImage)`
+  width: 100%;
   transition: transform 0.3s;
   &:hover {
     transform: scale(1.05);

@@ -7,6 +7,15 @@ import theme from '../styles/theme'
 
 const BackgroundImageStyled = styled(BackgroundImage)`
   height: 400px;
+  @media ${({ theme }) => theme.device.tablet} {
+    /* iOS misbehaves with 'fixed' so remove from mobile entirely */
+    /* Targeting psuedo-elements directly per https://www.gatsbyjs.org/packages/gatsby-background-image/#responsive-styling */
+    &,
+    &::before,
+    &::after {
+      background-attachment: fixed;
+    }
+  }
 `
 
 const HeroImage = ({ children, className }) => {
@@ -34,10 +43,6 @@ const HeroImage = ({ children, className }) => {
       fluid={backgroundFluidImageStack}
       backgroundColor={theme.backgroundPrimary}
       className={className}
-      style={{
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
-      }}
     >
       {children}
     </BackgroundImageStyled>

@@ -1,4 +1,5 @@
 import { darken, lighten } from 'polished'
+import { device } from './media-queries'
 
 const defaultTheme = {
   maxContentWidth: '1280px',
@@ -14,4 +15,8 @@ const defaultThemeDeps = {
   colorSecondaryHover: darken(0.2, defaultTheme.colorSecondary),
 }
 
-export default { ...defaultTheme, ...defaultThemeDeps }
+export default {
+  ...defaultTheme,
+  ...defaultThemeDeps,
+  device,
+}

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { Card } from '../styles/Card'
+import { Card, cardBorderRadius } from '../styles/Card'
 import { PageSection } from '../styles/Page'
 
 const ResourcePage = ({ data }) => {
@@ -14,12 +14,7 @@ const ResourcePage = ({ data }) => {
     <Layout headerTitle={name} headerSubTitle={description}>
       <PageSectionStyled>
         <ImageContainer>
-          <Img
-            fluid={imageUrl.childImageSharp.fluid}
-            style={{
-              borderRadius: '0.625rem',
-            }}
-          />
+          <ImgStyled fluid={imageUrl.childImageSharp.fluid} />
         </ImageContainer>
         <LinkCardList>
           {links &&
@@ -33,7 +28,7 @@ const ResourcePage = ({ data }) => {
                   key={url}
                 >
                   <h4>{name}</h4>
-                  <p>{description}</p>
+                  {description && <p>{description}</p>}
                 </LinkCardStyled>
               )
             })}
@@ -65,21 +60,54 @@ export const resourcePageQuery = graphql`
   }
 `
 
-const ImageContainer = styled.div`
-  width: 300px;
-  max-height: 300px;
-  overflow: hidden;
-  margin-right: 2rem;
-`
-
 const PageSectionStyled = styled(PageSection)`
   display: flex;
+  flex-direction: column;
+  @media ${({ theme }) => theme.device.tablet} {
+    flex-direction: row;
+  }
+`
+
+const imageMaxHeight = '200px'
+const imageMaxHeightMobileL = '300px'
+const ImageContainer = styled.div`
+  width: 100%;
+  max-height: ${imageMaxHeight};
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: ${cardBorderRadius};
+  flex-shrink: 0;
+  @media ${({ theme }) => theme.device.mobileL} {
+    max-height: ${imageMaxHeightMobileL};
+  }
+  @media ${({ theme }) => theme.device.tablet} {
+    width: 200px;
+    flex-direction: row;
+    margin-right: 2rem;
+  }
+  @media ${({ theme }) => theme.device.laptop} {
+    width: 300px;
+  }
+`
+
+const ImgStyled = styled(Img)`
+  border-radius: ${cardBorderRadius};
+  max-height: ${imageMaxHeight};
+  @media ${({ theme }) => theme.device.mobileL} {
+    max-height: ${imageMaxHeightMobileL};
+  }
 `
 
 const LinkCardList = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  @media ${({ theme }) => theme.device.tablet} {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: none;
+  }
 `
 
 const LinkCardStyled = styled(Card)`

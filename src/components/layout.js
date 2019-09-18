@@ -32,13 +32,15 @@ const Layout = ({ children, headerTitle, headerSubTitle }) => (
   </ThemeProvider>
 )
 
-const contentPaddingHorizontal = '3rem'
 const contentPaddingVertical = '1.45rem'
 
 const SiteContent = styled.div`
   margin: 0 auto;
   max-width: ${theme.maxContentWidth};
-  padding: 0 ${contentPaddingHorizontal} ${contentPaddingVertical};
+  padding: 0 1rem ${contentPaddingVertical};
+  @media ${({ theme }) => theme.device.tablet} {
+    padding: 0 3rem ${contentPaddingVertical};
+  }
 `
 
 const Footer = styled.footer`
@@ -48,6 +50,9 @@ const Footer = styled.footer`
 
 const FooterContent = styled(SiteContent)`
   padding-top: ${contentPaddingVertical};
+  @media ${({ theme }) => theme.device.tablet} {
+    padding-top: ${contentPaddingVertical};
+  }
 `
 
 Layout.propTypes = {
