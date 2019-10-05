@@ -8,6 +8,9 @@ const config = {
     title: `SMPL Coding Club`,
     description: `Start your journey in the wonderful world of programming`,
     author: `Yonatan Bentzur`,
+    siteUrl: `${process.env.HOSTNAME}`,
+    logo: `/images/SMPL-logo-text.png`,
+    twitterUsername: '@ybentzur',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

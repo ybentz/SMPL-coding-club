@@ -1,16 +1,9 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
-
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image: imagePath }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,13 +12,17 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
+            logo
+            twitterUsername
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const defaults = site.siteMetadata
+  const metaDescription = description || defaults.description
 
   return (
     <Helmet
@@ -33,7 +30,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${defaults.title}`}
       meta={[
         {
           name: `description`,
@@ -41,33 +38,57 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `${title} | ${defaults.title}`,
         },
         {
           property: `og:description`,
           content: metaDescription,
         },
         {
+          property: `og:site_name`,
+          content: `SMPL Coding Club`,
+        },
+        {
+          property: 'og:image',
+          content: `${defaults.siteUrl}${imagePath || defaults.logo}`,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: defaults.twitterUsername,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${title} | ${defaults.title}`,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+        .concat(
+          imagePath
+            ? [
+                {
+                  property: 'twitter:image',
+                  content: `${site.siteMetadata.siteUrl}${imagePath}`,
+                },
+                {
+                  name: 'twitter:card',
+                  content: 'summary_large_image',
+                },
+              ]
+            : [
+                {
+                  name: 'twitter:card',
+                  content: 'summary',
+                },
+              ]
+        )
+        .concat(meta)}
     />
   )
 }
@@ -83,6 +104,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 export default SEO

@@ -10,7 +10,10 @@ const ResourcesPage = () => (
     headerTitle="Coding Resources"
     headerSubTitle="List of programming languages and other useful topics"
   >
-    <SEO title="Resource List" />
+    <SEO
+      title="Resource List"
+      description="Find beginner-friendly learning resources for many popular programming languages"
+    />
     <PageTextSection>
       <h4>
         These are some of the best programming languages to start coding with.

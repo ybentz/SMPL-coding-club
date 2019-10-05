@@ -27,7 +27,7 @@ const AboutPage = () => {
 
   return (
     <Layout headerTitle="About">
-      <SEO title="About Page" />
+      <SEO title="About Page" description="Get to know the Coding Club's instructors"/>
       <PageTextSection>
         <h2>About the coding club:</h2>
         <h4>

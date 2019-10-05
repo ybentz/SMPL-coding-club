@@ -34,7 +34,11 @@ const ResourcePage = ({ data }) => {
             })}
         </LinkCardList>
       </PageSectionStyled>
-      <SEO title={`${name}`} image={imageUrl.childImageSharp.fluid.src} />
+      <SEO
+        title={name}
+        description={`Beginner-friendly learning resources for ${name}`}
+        image={imageUrl.childImageSharp.fluid.src}
+      />
     </Layout>
   )
 }
