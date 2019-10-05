@@ -50,11 +50,13 @@ if (process.env.GOOGLE_ANALYTICS_ID) {
   config.plugins = [
     ...config.plugins,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        // Put GA script at the end of the body
-        head: false,
+        pluginConfig: {
+          // Put GA script at the end of the body
+          head: false,
+        },
+        trackingIds: [process.env.GOOGLE_ANALYTICS_ID],
       },
     },
   ]
