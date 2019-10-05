@@ -1,4 +1,9 @@
-module.exports = {
+// Make .env.* available to node scripts
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const config = {
   siteMetadata: {
     title: `SMPL Coding Club`,
     description: `Start your journey in the wonderful world of programming`,
@@ -40,3 +45,19 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+if (process.env.GOOGLE_ANALYTICS_ID) {
+  config.plugins = [
+    ...config.plugins,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        // Put GA script at the end of the body
+        head: false,
+      },
+    },
+  ]
+}
+
+module.exports = config

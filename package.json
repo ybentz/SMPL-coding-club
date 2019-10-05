@@ -1,7 +1,7 @@
 {
   "name": "smpl-coding-club",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "The San Mateo Public Library unofficial coding club website",
   "version": "0.1.0",
   "author": "Yonatan Bentzur <ybentzur7@gmail.com>",
   "dependencies": {
@@ -9,6 +9,7 @@
     "gatsby": "^2.13.73",
     "gatsby-background-image": "^0.8.5",
     "gatsby-image": "^2.2.10",
+    "gatsby-plugin-google-analytics": "^2.1.20",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
