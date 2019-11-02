@@ -23,13 +23,18 @@
       },
       {
         "name": "Grasshopper",
-        "description": "A free mobile app (for iOS and Android) that teaches coding for beginners.",
+        "description": "A free website & mobile app (for iOS and Android) that teaches coding for beginners. ",
         "url": "https://grasshopper.codes/"
       },
       {
         "name": "CargoBot",
         "description": "A free iOS app that teaches coding for beginners.",
         "url": "https://twolivesleft.com/CargoBot/"
+      },
+      {
+        "name": "Tynker - coding for kids",
+        "description": "A website for teaching kids of all ages how to code. Mostly paid but has a good amount of free fun puzzles for beginners. Similar to Sketch (uses dragging blocks) but has great tutorials.",
+        "url": "https://www.tynker.com/hour-of-code/"
       }
     ]
   },
@@ -104,14 +109,29 @@
         "url": "https://hourofpython.com/"
       },
       {
-        "name": "How to Think Like a Computer Scientist: Interactive Edition",
-        "description": "A more theoretical approach to learning computer science using the Python language and interactive examples.",
-        "url": "http://interactivepython.org/runestone/static/thinkcspy/index.html"
+        "name": "Introduction To Python Programming - free Udemy course",
+        "description": "\"A quick and easy intro into python programming\" - Python introduction course. 4.5 hours of video",
+        "url": "https://www.udemy.com/course/pythonforbeginnersintro/"
+      },
+      {
+        "name": "Programming with Python: Hands-On Introduction for Beginners - free Udemy course",
+        "description": "\"Start writing your own programs in Python 3 from scratch\" - teaches Python from the very basics. 3.5 hours of video",
+        "url": "https://www.udemy.com/course/python-programming-beginners/"
+      },
+      {
+        "name": "Python Core and Advanced - free Udemy course",
+        "description": "\"Master the fundamentals of Python in easy steps\" - teaches Python from the basics to more advanced subjects. 8.5 hours of video",
+        "url": "https://www.udemy.com/course/python-core-and-advanced/"
       },
       {
         "name": "Learn Python the Hard Way",
         "description": "A textbook approach to learning Python with lots of examples (costs money, but has a free sample with 8 exercises).",
         "url": "https://learnpythonthehardway.org/book/"
+      },
+      {
+        "name": "How to Think Like a Computer Scientist: Interactive Edition",
+        "description": "A more theoretical approach to learning computer science using the Python language and interactive examples.",
+        "url": "http://interactivepython.org/runestone/static/thinkcspy/index.html"
       }
     ]
   },
@@ -168,6 +188,11 @@
         "name": "Learn to code with Karel the dog",
         "description": "2D problem solving exercises.",
         "url": "http://hoc.codehs.com"
+      },
+      {
+        "name": "Newline - first 30 days of web development",
+        "description": "A book type course that starts from the very basics. Great for beginners that prefer learning by reading and doing.",
+        "url": "https://www.newline.co/30-days-of-webdev"
       }
     ]
   },
@@ -192,6 +217,11 @@
         "name": "Khan Academy",
         "description": "Step-by-step tutorial with videos.",
         "url": "https://www.khanacademy.org/computing/computer-programming/html-css"
+      },
+      {
+        "name": "Newline - first 30 days of web development",
+        "description": "A book type course that starts from the very basics. Great for beginners that prefer learning by reading and doing.",
+        "url": "https://www.newline.co/30-days-of-webdev"
       }
     ]
   },
