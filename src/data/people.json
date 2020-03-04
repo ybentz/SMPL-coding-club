@@ -2,7 +2,12 @@
   {
     "name": "Yonatan Bentzur",
     "imageUrl": "../images/people/Yonatan.jpg",
-    "description": "Yonatan is originally from Israel and moved to the Bay Area about 4 years ago. After completing his BSc in Computer Sceince from one of the leading universities in Israel he started working at Wix.com, the Israeli website builder, as a frontend (web) engineer. After moving to the US he started working at a small startup called Lustre.ai (formerly Slant.co) and he's been there for the past 3.5 years."
+    "description": "Yonatan is originally from Israel and moved to the Bay Area about 4 years ago. After completing his BSc in Computer Science from one of the leading universities in Israel he started working at Wix.com, the Israeli website builder, as a frontend (web) engineer. After moving to the US he started working at a small startup called Lustre.ai (formerly Slant.co) and he's been there for the past 3.5 years."
+  },
+  {
+    "name": "Morgan Frisby",
+    "imageUrl": "../images/people/Morgan.jpg",
+    "description": "Morgan is originally from Austin, Texas and moved to California after high school to attend Harvey Mudd College in Claremont, CA. She graduated in 2019 with a joint degree in Mathematics and Computer Science, along with a concentration in European Studies. Morgan now works at UnifyID in Redwood City as a software engineer on the backend team and enjoys to trail run, watch ice hockey, and volunteer with the library and humane society in her free time."
   },
   {
     "name": "Lauren Wong",
