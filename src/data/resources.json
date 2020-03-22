@@ -99,6 +99,11 @@
         "url": "https://codecombat.com/play"
       },
       {
+        "name": "Edabit",
+        "description": "Coding challenges for beginner to intermediate levels. 100% free.",
+        "url": "https://edabit.com/"
+      },
+      {
         "name": "EarSketch",
         "description": "Learn to code by making music.",
         "url": "https://earsketch.gatech.edu/landing/"
@@ -107,6 +112,11 @@
         "name": "Trinket",
         "description": "A visual introduction to code using the Python programming language.",
         "url": "https://hourofpython.com/"
+      },
+      {
+        "name": "Exercism.io",
+        "description": "Coding challenges in various difficulties with the ability to upload your solution to be checked and receive feedback from experienced mentors. 100% free. Requires some technical abilities to get set up but they have detailed instructions how to do so.",
+        "url": "https://exercism.io"
       },
       {
         "name": "Introduction To Python Programming - free Udemy course",
@@ -165,6 +175,11 @@
         "url": "https://www.khanacademy.org/computing/computer-programming/programming"
       },
       {
+        "name": "Edabit",
+        "description": "Coding challenges for beginner to intermediate levels. 100% free.",
+        "url": "https://edabit.com/"
+      },
+      {
         "name": "EarSketch",
         "description": "Learn to code by making music.",
         "url": "https://earsketch.gatech.edu/landing/"
@@ -193,6 +208,16 @@
         "name": "Newline - first 30 days of web development",
         "description": "A book type course that starts from the very basics. Great for beginners that prefer learning by reading and doing.",
         "url": "https://www.newline.co/30-days-of-webdev"
+      },
+      {
+        "name": "The Odin Project",
+        "description": "The site offers a rich curriculum for beginners that want to learn web development (how to build websites) all the way through trying to get hired. It has a good amount of exercises and projects, 100% free.",
+        "url": "https://www.theodinproject.com"
+      },
+      {
+        "name": "Exercism.io",
+        "description": "Coding challenges in various difficulties with the ability to upload your solution to be checked and receive feedback from experienced mentors. 100% free. Requires some technical abilities to get set up but they have detailed instructions how to do so.",
+        "url": "https://exercism.io"
       }
     ]
   },
@@ -222,6 +247,11 @@
         "name": "Newline - first 30 days of web development",
         "description": "A book type course that starts from the very basics. Great for beginners that prefer learning by reading and doing.",
         "url": "https://www.newline.co/30-days-of-webdev"
+      },
+      {
+        "name": "The Odin Project",
+        "description": "The site offers a rich curriculum for beginners that want to learn web development (how to build websites) all the way through trying to get hired. It has a good amount of exercises and projects, 100% free.",
+        "url": "https://www.theodinproject.com/"
       }
     ]
   },
@@ -257,6 +287,16 @@
         "name": "Codecademy",
         "description": "Step-by-step basics tutorial, learn by following instructions and writing real code.",
         "url": "https://www.codecademy.com/learn/learn-java"
+      },
+      {
+        "name": "Exercism.io",
+        "description": "Coding challenges in various difficulties with the ability to upload your solution to be checked and receive feedback from experienced mentors. 100% free. Requires some technical abilities to get set up but they have detailed instructions how to do so.",
+        "url": "https://exercism.io"
+      },
+      {
+        "name": "Edabit",
+        "description": "Coding challenges for beginner to intermediate levels. 100% free.",
+        "url": "https://edabit.com/"
       }
     ]
   },
@@ -277,6 +317,16 @@
         "name": "Swift Playgrounds",
         "description": "An official and free iOS app made by Apple that teaches Swift and coding in general in a fun way. (link to the App Store)",
         "url": "https://apps.apple.com/us/app/swift-playgrounds/id908519492"
+      },
+      {
+        "name": "Exercism.io",
+        "description": "Coding challenges in various difficulties with the ability to upload your solution to be checked and receive feedback from experienced mentors. 100% free. Requires some technical abilities to get set up but they have detailed instructions how to do so.",
+        "url": "https://exercism.io"
+      },
+      {
+        "name": "Edabit",
+        "description": "Coding challenges for beginner to intermediate levels. 100% free.",
+        "url": "https://edabit.com/"
       }
     ]
   },
@@ -296,7 +346,22 @@
       {
         "name": "CodingBat",
         "description": "Programming challenges in Python or Java.",
-        "url": "http://codingbat.com"
+        "url": "http://codingbat.com/"
+      },
+      {
+        "name": "Exercism.io",
+        "description": "Coding challenges in various languages and difficulties with the ability to upload your solution to be checked and receive feedback from experienced mentors. 100% free. Requires some technical abilities to get set up but they have detailed instructions how to do so.",
+        "url": "https://exercism.io/"
+      },
+      {
+        "name": "Codewars",
+        "description": "Coding challenges in various languages and difficulties with the ability to upload your solution and see other people's solutions. Suitable for beginners to intermediate level.",
+        "url": "https://www.codewars.com/"
+      },
+      {
+        "name": "HackerRank",
+        "description": "A large collection of coding challenges tailored towards algorithms and data structures.",
+        "url": "https://www.hackerrank.com/"
       }
     ]
   }
